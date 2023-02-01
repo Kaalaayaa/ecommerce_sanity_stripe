@@ -25,6 +25,7 @@ const Cart = () => {
   } = useStateContext();
 
   const handleCheckout = async () => {
+    console.log("hello")
     const stripe = await getStripe();
 
     const response = await fetch("/api/stripe", {

@@ -27,7 +27,7 @@ export const getServerSideProps = async () => {
   const bannerData = await client.fetch(bannerQuery);
 
   return {
-    props: { products, bannerData }
+    props: { products, bannerData },
   }
 }
 
